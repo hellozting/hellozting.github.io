@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Homepage</title>
-  <link rel="stylesheet" href="style.css">
+  <title>个人学术主页</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .profile-pic {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .profile-pic img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .content {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Personal Homepage</h1>
-  </header>
-  
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I am a researcher in the field of XYZ. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-    </section>
-    
-    <section>
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Interest 1</li>
-        <li>Interest 2</li>
-        <li>Interest 3</li>
-      </ul>
-    </section>
-    
-    <section>
-      <h2>Publications</h2>
-      <ul>
-        <li>Publication 1</li>
-        <li>Publication 2</li>
-        <li>Publication 3</li>
-      </ul>
-    </section>
-  </main>
-  
-  <footer>
-    <p>Contact me: email@example.com</p>
-  </footer>
+  <div class="container">
+    <div class="profile-pic">
+      <img src="your_photo.jpg" alt="个人相片">
+    </div>
+    <div class="content">
+      <h1>您的姓名</h1>
+      <p>个人学术主页内容</p>
+    </div>
+  </div>
 </body>
 </html>
