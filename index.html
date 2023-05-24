@@ -5,40 +5,61 @@
   <title>个人学术主页</title>
   <style>
     body {
-      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f2f2f2;
     }
-    .container {
+    header {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    main {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 20px auto;
       padding: 20px;
       background-color: #ffffff;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    .profile-pic {
-      text-align: center;
+    main h2 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+    main p {
       margin-bottom: 20px;
+      line-height: 1.5;
     }
-    .profile-pic img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-    }
-    .content {
+    footer {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 10px;
       text-align: center;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="profile-pic">
-      <img src="your_photo.jpg" alt="个人相片">
-    </div>
-    <div class="content">
-      <h1>您的姓名</h1>
-      <p>个人学术主页内容</p>
-    </div>
-  </div>
+  <header>
+    <h1>个人学术主页</h1>
+  </header>
+  <main>
+    <h2>个人简介</h2>
+    <p>您的个人简介内容</p>
+
+    <h2>研究方向</h2>
+    <p>您的研究方向内容</p>
+
+    <h2>发表论文</h2>
+    <p>您的发表论文内容</p>
+  </main>
+  <footer>
+    &copy; 2023 个人学术主页 | 版权所有
+  </footer>
 </body>
 </html>
