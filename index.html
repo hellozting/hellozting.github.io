@@ -5,61 +5,411 @@
   <title>个人学术主页</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      background-color: #e7eaeb;
       margin: 0;
       padding: 0;
-      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
     }
-    header {
-      background-color: #333333;
-      color: #ffffff;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-    main {
-      max-width: 800px;
-      margin: 20px auto;
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
       padding: 20px;
       background-color: #ffffff;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    main h2 {
-      margin-top: 0;
-      font-size: 24px;
-    }
-    main p {
+    .header {
+      text-align: left;
       margin-bottom: 20px;
+    }
+    .header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+    .profile {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .profile img {
+      max-width: 200px;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 0;
+    }
+    .introduction {
+      text-align: justify;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      margin-top: -20px;
+      font-family: "Times New Roman", serif; /* 修改字体样式 */
+      font-size: 17px; /* 修改字体大小 */
+      line-height: 1.5; /* 修改行高 */
+    }
+    .introduction span {
+      color: #db9451; /* 设置文字颜色为红色 */
+    }
+    .introduction a {
+      color: #0404fc; /* 设置链接文字颜色为深蓝色 */
+      /* text-decoration: underline; 添加下划线效果 */
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      font-size: 22px;
+      font-family: Arial, sans-serif;
+      margin: 20;
+    }
+    .section p {
+      margin: 0;
+    }
+    .publication {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    .publication img {
+      max-width: 200px;
+      max-height: 200px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+    .publication .title {
+      font-size: 15px;
+      font-family: Arial, sans-serif;
       line-height: 1.5;
+      margin-top: 10px;
+      /* font-weight: bold; */
     }
-    footer {
-      background-color: #333333;
-      color: #ffffff;
-      padding: 10px;
-      text-align: center;
-      font-size: 14px;
+    .publication .title span {
+      font-weight: bold;
     }
+    .publication .pdf-link {
+      margin-left: 5px;
+      font-size: 18px;
+      /* font-weight: bold; */
+      color: #0404fc; /* 深蓝色 */
+      text-decoration: none;
+    }
+
   </style>
 </head>
 <body>
-  <header>
-    <h1>个人学术主页</h1>
-  </header>
-  <main>
-    <h2>个人简介</h2>
-    <p>您的个人简介内容</p>
+  <div class="container">
+    <div class="header">
+      <h1 style="color: #000080;">Ting Zhang</h1>
+    </div>
+    <div class="profile">
+      <img src="profile.jpg" alt="个人照片">
+      <div class="introduction">
+        <p>I am currently a senior researcher in Visual Computing group at Microsoft Research Asia (MSRA). 
+          I obtained my B.S. (2012) and Ph.D. (2017) from University of Science and Technology of China (USTC).
+          I had the internship at MSRA during 2012-2017 and achieved Microsoft Research Asia Fellowship award in 2015. 
+          During my PhD, I worked on approximate nearest neighbor search. After that, I joined MSRA as a permanent researcher in 2017.
+          My work is mainly focused on computer vision, such as content generation, representation learning, large scale indexing.
+          If you are interested in collaborating, discussing research ideas, or learning more about my work, please feel free to contact me at 
+          <span>tinzhan@microsoft.com</span>. <a href="https://scholar.google.com/citations?user=XdWdWgcAAAAJ&hl=en">[Google Scholar]</a>
 
-    <h2>研究方向</h2>
-    <p>您的研究方向内容</p>
+        </p>
+      </div>
+    </div>
 
-    <h2>发表论文</h2>
-    <p>您的发表论文内容</p>
-  </main>
-  <footer>
-    &copy; 2023 个人学术主页 | 版权所有
-  </footer>
+    <div class="section">
+      <h2 style="color: #000080;">Publications</h2>
+      <div class="publication">
+          <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+          <div class="title">
+            Yidan Zhang, <span>Ting Zhang</span>, Dong Chen, Yujing Wang, Qi Chen, Xing Xie, Hao Sun, Weiwei
+              Deng, Qi Zhang, Fan Yang, et al. <span>“IRGen: Generative Modeling for Image Retrieval”.</span> In: arXiv
+              preprint arXiv:2303.10126 (2023). <a class="pdf-link" href="https://arxiv.org/pdf/2303.10126.pdf" target="_blank">[pdf]</a>
+          </div>
+      </div>
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Junshu Tang, Tengfei Wang, Bo Zhang, <span>Ting Zhang</span>, Ran Yi, Lizhuang Ma, and Dong Chen.
+        <span>“Make-It-3D: High-Fidelity 3D Creation from A Single Image with Diffusion Prior”.</span> In: arXiv
+            preprint arXiv:2303.14184 (2023).
+            <a class="pdf-link" href="https://arxiv.org/pdf/2303.14184.pdf" target="_blank">[pdf]</a>
+            <a class="pdf-link" href="https://github.com/junshutang/Make-It-3D" target="_blank">[code] </a>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Tengfei Wang, Bo Zhang, <span>Ting Zhang</span>, Shuyang Gu, Jianmin Bao, Tadas Baltrusaitis, Jingjing
+            Shen, Dong Chen, Fang Wen, Qifeng Chen, et al. <span>“Rodin: A Generative Model for Sculpting 3D
+            Digital Avatars Using Diffusion”.</span> In: arXiv preprint arXiv:2212.06135 (2022). 
+            <a class="pdf-link" href="https://arxiv.org/pdf/2212.06135.pdf" target="_blank">[pdf]</a>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Binxin Yang, Shuyang Gu, Bo Zhang, <span>Ting Zhang</span>, Xuejin Chen, Xiaoyan Sun, Dong Chen, and
+            Fang Wen. <span>“Paint by Example: Exemplar-based Image Editing with Diffusion Models”.</span> In: arXiv
+            preprint arXiv:2211.13227 (2022).
+            <a class="pdf-link" href="https://arxiv.org/pdf/2211.13227.pdf" target="_blank">[pdf]</a>
+            <a class="pdf-link" href="https://github.com/Fantasy-Studio/Paint-by-Example" target="_blank">[code] </a>
+        </div>
+      </div>
+      
+
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Xiaoyi Dong, Yinglin Zheng, Jianmin Bao, <span>Ting Zhang</span>, Dongdong Chen, Hao Yang, Ming
+            Zeng, Weiming Zhang, Lu Yuan, Dong Chen, et al. <span>“Maskclip: Masked self-distillation advances
+            contrastive language-image pretraining”.</span> In: arXiv preprint arXiv:2208.12262 (2022). 
+            <a class="pdf-link" href="https://arxiv.org/pdf/2208.12262.pdf" target="_blank">[pdf] </a>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Junshu Tang, Bo Zhang, Binxin Yang, <span>Ting Zhang</span>, Dong Chen, Lizhuang Ma, and Fang
+            Wen. <span>“Explicitly controllable 3d-aware portrait generation”.</span> In: arXiv preprint arXiv:2209.05434
+            (2022). 
+            <a class="pdf-link" href="https://arxiv.org/pdf/2209.05434.pdf" target="_blank">[pdf] </a>
+            <a class="pdf-link" href="https://github.com/junshutang/3DFaceShop" target="_blank">[code] </a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Tengfei Wang, <span>Ting Zhang</span>, Bo Zhang, Hao Ouyang, Dong Chen, Qifeng Chen, and Fang Wen.
+        <span>“Pretraining is all you need for image-to-image translation”.</span> In: arXiv preprint arXiv:2205.12952
+            (2022). 
+            <a class="pdf-link" href="https://arxiv.org/pdf/2205.12952.pdf" target="_blank">[pdf]</a>
+            <a class="pdf-link" href="https://github.com/PITI-Synthesis/PITI" target="_blank">[code] </a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Yinglin Zheng, Hao Yang, <span>Ting Zhang</span>, Jianmin Bao, Dongdong Chen, Yangyu Huang, Lu
+            Yuan, Dong Chen, Ming Zeng, and Fang Wen. <span>“General facial representation learning in a visual-
+            linguistic manner”.</span> In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+            Recognition. 2022, pp. 18697–18709. 
+            <a class="pdf-link" href="https://arxiv.org/pdf/2112.03109.pdf" target="_blank">[pdf]</a>
+            <a class="pdf-link" href="https://github.com/FacePerceiver/FaRL" target="_blank">[code] </a>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Xiaoyi Dong, Jianmin Bao, <span>Ting Zhang</span>, Dongdong Chen, Weiming Zhang, Lu Yuan, Dong Chen,
+            Fang Wen, and Nenghai Yu. <span>“Bootstrapped Masked Autoencoders for Vision BERT Pretraining”.</span>
+            In: Computer Vision–ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23–27,
+            2022, Proceedings, Part XXX. Springer. 2022, pp. 247–264. <a class="pdf-link" href="https://arxiv.org/pdf/2207.07116.pdf" target="_blank">[pdf] </a>
+            <a class="pdf-link" href="https://github.com/LightDXY/BootMAE" target="_blank">[code] </a>
+        </div>
+      </div>
+
+
+
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Xiaoyi Dong, Jianmin Bao, Dongdong Chen, <span>Ting Zhang</span>, Weiming Zhang, Nenghai Yu, Dong
+            Chen, Fang Wen, and Baining Guo. <span>“Protecting celebrities from deepfake with identity con-
+            sistency transformer”.</span> In: Proceedings of the IEEE/CVF Conference on Computer Vision and
+            Pattern Recognition. 2022, pp. 9468–9478. <a class="pdf-link" href="https://arxiv.org/pdf/2203.01318.pdf" target="_blank">[pdf] </a>
+            <a class="pdf-link" href="https://github.com/LightDXY/ICT_DeepFake" target="_blank">[code] </a>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Xingran Zhou, Bo Zhang, <span>Ting Zhang</span>, Pan Zhang, Jianmin Bao, Dong Chen, Zhongfei Zhang,
+            and Fang Wen. <span>“Cocosnet v2: Full-resolution correspondence learning for image translation”.</span> In:
+            Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2021,
+            pp. 11465–11475.
+            <a class="pdf-link" href="https://arxiv.org/pdf/2012.02047.pdf" target="_blank">[pdf] </a>
+            <a class="pdf-link" href="https://github.com/microsoft/CoCosNet-v2" target="_blank">[code] </a>
+        </div>
+      </div>
+
+
+      
+
+
+      <div class="publication">
+      <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+      <div class="title">
+        Xiaoyi Dong, Jianmin Bao, <span>Ting Zhang</span>, Dongdong Chen, Weiming Zhang, Lu Yuan, Dong
+          Chen, Fang Wen, and Nenghai Yu Peco. <span>“Perceptual codebook for bert pre-training of vision
+          transformers”.</span> In: arXiv preprint arXiv:2111.12710 2.6 (2021). <a class="pdf-link" href="https://arxiv.org/pdf/2111.12710.pdf" target="_blank">[pdf]</a>
+      </div>
+      </div>
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Pan Zhang, Bo Zhang, <span>Ting Zhang</span>, Dong Chen, Yong Wang, and Fang Wen. <span>“Prototypical
+            pseudo label denoising and target structure learning for domain adaptive semantic segmentation”.</span>
+            In: Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2021,
+            pp. 12414–12424.
+            <a class="pdf-link" href="https://openaccess.thecvf.com/content/CVPR2021/papers/Zhang_Prototypical_Pseudo_Label_Denoising_and_Target_Structure_Learning_for_Domain_CVPR_2021_paper.pdf" target="_blank">[pdf]</a>
+            <a class="pdf-link" href="https://github.com/microsoft/ProDA" target="_blank">[code] </a>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Lingzhi Li, Jianmin Bao, <span>Ting Zhang</span>, Hao Yang, Dong Chen, Fang Wen, and Baining Guo. <span>“Face
+            x-ray for more general face forgery detection”.</span> In: Proceedings of the IEEE/CVF conference on
+            computer vision and pattern recognition. 2020, pp. 5001–5010. 
+            <a class="pdf-link" href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Face_X-Ray_for_More_General_Face_Forgery_Detection_CVPR_2020_paper.pdf" target="_blank">[pdf]</a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Pan Zhang, Bo Zhang, <span>Ting Zhang</span>, Dong Chen, and Fang Wen. <span>“Robust mutual learning for
+            semi-supervised semantic segmentation”.</span> In: arXiv preprint arXiv:2106.00609 (2021).
+            <a class="pdf-link" href="https://arxiv.org/pdf/2106.00609.pdf" target="_blank">[pdf]</a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Guotian Xie, Kuiyuan Yang, <span>Ting Zhang</span>, Jingdong Wang, and Jianhuang Lai. <span>“Balanced de-
+            coupled spatial convolution for CNNs”.</span> In: IEEE transactions on neural networks and learning
+            systems 30.11 (2019), pp. 3419–3432.
+        </div>
+      </div>
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Xiang Ming, Fangyun Wei, <span>Ting Zhang</span>, Dong Chen, and Fang Wen. <span>“Group sampling for scale
+            invariant face detection”.</span> In: Proceedings of the IEEE/CVF Conference on Computer Vision and
+            Pattern Recognition. 2019, pp. 3446–3456. 
+            <a class="pdf-link" href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Ming_Group_Sampling_for_Scale_Invariant_Face_Detection_CVPR_2019_paper.pdf" target="_blank">[pdf]</a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Guotian Xie, Jingdong Wang, <span>Ting Zhang</span>, Jianhuang Lai, Richang Hong, and Guo-Jun Qi.
+        <span>“Interleaved structured sparse convolutional neural networks”.</span> In: Proceedings of the IEEE Con-
+            ference on Computer Vision and Pattern Recognition. 2018, pp. 8847–8856.
+            <a class="pdf-link" href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Xie_Interleaved_Structured_Sparse_CVPR_2018_paper.pdf" target="_blank">[pdf]</a>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Guotian Xie, <span>Ting Zhang</span>, Kuiyuan Yang, Jianhuang Lai, and Jingdong Wang. <span>“Decoupled
+            convolutions for cnns”.</span> In: Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 32. 1. 2018.
+            <a class="pdf-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/11638" target="_blank">[pdf]</a>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Jingdong Wang and <span>Ting Zhang</span>. <span>“Composite quantization”.</span> In: IEEE transactions on pattern
+            analysis and machine intelligence 41.6 (2018), pp. 1308–1322. 
+            <a class="pdf-link" href="https://arxiv.org/pdf/1712.00955.pdf" target="_blank">[pdf]</a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+        <span>Ting Zhang</span>, Guo-Jun Qi, Bin Xiao, and Jingdong Wang. <span>“Interleaved group convolutions”.</span> In:
+            Proceedings of the IEEE international conference on computer vision. 2017, pp. 4373–4382.
+            <a class="pdf-link" href="https://openaccess.thecvf.com/content_ICCV_2017/papers/Zhang_Interleaved_Group_Convolutions_ICCV_2017_paper.pdf" target="_blank">[pdf]</a>
+            <a class="pdf-link" href="https://github.com/hellozting/InterleavedGroupConvolutions" target="_blank">[code] </a>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Jingdong Wang, <span>Ting Zhang</span>, Jingkuan Song, Nicu Sebe, and Heng Tao Shen. <span>“A survey on learning to hash”.</span>
+            In: IEEE transactions on pattern analysis and machine intelligence 40.4 (2017), pp. 769–790. 
+            <a class="pdf-link" href="https://arxiv.org/pdf/1606.00185.pdf" target="_blank">[pdf]</a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+          Xiaojuan Wang, <span>Ting Zhang</span>, Guo-Jun Qi, Jinhui Tang, and Jingdong Wang. <span>“Supervised quan-
+            tization for similarity search”.</span> In: Proceedings of the IEEE Conference on Computer Vision and
+            Pattern Recognition. 2016, pp. 2018–2026.
+            <a class="pdf-link" href="https://openaccess.thecvf.com/content_cvpr_2016/papers/Wang_Supervised_Quantization_for_CVPR_2016_paper.pdf" target="_blank">[pdf]</a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+        <span>Ting Zhang</span> and Jingdong Wang. <span>“Collaborative quantization for cross-modal similarity search”.</span>
+            In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016,
+            pp. 2036–2045.
+            <a class="pdf-link" href="https://openaccess.thecvf.com/content_cvpr_2016/papers/Zhang_Collaborative_Quantization_for_CVPR_2016_paper.pdf" target="_blank">[pdf]</a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+        <span>Ting Zhang</span>, Guo-Jun Qi, Jinhui Tang, and Jingdong Wang. </span>“Sparse composite quantization”.</span>
+            In: Proceedings of the IEEE conference on computer vision and pattern recognition. 2015, pp. 4548–
+            4556.
+            <a class="pdf-link" href="https://openaccess.thecvf.com/content_cvpr_2015/papers/Zhang_Sparse_Composite_Quantization_2015_CVPR_paper.pdf" target="_blank">[pdf]</a>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <!-- <img src="pubs/irgen.jpg" alt="Publication Image"> -->
+        <div class="title">
+        <span>Ting Zhang</span>, Chao Du, and Jingdong Wang. <span>“Composite quantization for approximate nearest
+            neighbor search”.</span> In: International Conference on Machine Learning. PMLR. 2014, pp. 838–846.
+            <a class="pdf-link" href="http://proceedings.mlr.press/v32/zhangd14.pdf" target="_blank">[pdf]</a>
+            <a class="pdf-link" href="https://github.com/hellozting/CompositeQuantization" target="_blank">[code] </a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+    
+
+  </div>
 </body>
 </html>
